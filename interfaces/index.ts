@@ -20,3 +20,22 @@ export interface PropertyProps {
   image: string;
   discount: string;
 }
+
+export interface ButtonProps {
+  text: string;
+  onClick?: () => void;
+  variant?: 'primary' | 'secondary' | 'outline';
+  size?: 'small' | 'medium' | 'large';
+  disabled?: boolean;
+  className?: string;
+}
+
+export interface CardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  price: number;
+  rating: number;
+  location: string;
+  onButtonClick?: () => void;
+}
